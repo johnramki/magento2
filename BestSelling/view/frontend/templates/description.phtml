@@ -1,0 +1,5 @@
+<?php
+$descriptionViewModel = $block->getData('description_view_model');
+?>
+<p><?= $descriptionViewModel->getWithWordCount() ?></p>
+<?= $block->getChildHtml() ?>
