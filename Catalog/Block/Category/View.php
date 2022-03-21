@@ -1,6 +1,6 @@
 <?php
 
-namespace Codem\Category\Block\Category;
+namespace Codem\Catalog\Block\Category;
 
 
 class View extends \Magento\Catalog\Block\Category\View
@@ -23,7 +23,7 @@ class View extends \Magento\Catalog\Block\Category\View
         
         return $this->getLayout()
         ->createBlock(\Magento\Cms\Block\Block::class)
-        ->setBlockId($this->getCurrentCategory()->getData('futured_category_block_list')) //replace my_cmsblock_identifier with real CMS bock identifier
+        ->setBlockId($this->getCurrentCategory()->getData('futured_category_block_list'))
         ->toHtml();
     }
 }

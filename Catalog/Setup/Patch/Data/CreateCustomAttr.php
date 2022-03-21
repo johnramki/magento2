@@ -47,6 +47,7 @@ class CreateCustomAttr implements DataPatchInterface {
         /** @var EavSetup $eavSetup */
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
 
+        //Attribute for product (Minimum Guarantee)
         $eavSetup->addAttribute('catalog_product', 'minimum_guarantee', [
             'type' => 'text',
             'backend' => '',
@@ -68,6 +69,24 @@ class CreateCustomAttr implements DataPatchInterface {
             'unique' => false,
             'apply_to' => '',
         ]);
+
+        $eavSetup->addAttribute(
+            \Magento\Catalog\Model\Category::ENTITY,
+            'futured_category_block_list',
+            [
+                'type' => 'int',
+                'label' => 'Futured category Block',
+                'input' => 'select',
+                'source' => 'Magento\Catalog\Model\Category\Attribute\Source\Page',
+                'global' => \Magento\Catalog\Model\ResourceModel\Eav\Attribute::SCOPE_STORE,
+                'visible' => true,
+                'required' => false,
+                'user_defined' => false,
+                'default' => null,
+                'group' => 'General Information',
+                'backend' => ''
+            ]
+        );
     }
 
     /**

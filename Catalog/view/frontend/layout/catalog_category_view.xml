@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content.bottom">
-             <block class="Codem\Category\Block\Category\View" name="category.cms.bottom" template="Codem_Category::category/bottom-cms.phtml"/>
+             <block class="Codem\Catalog\Block\Category\View" name="category.cms.bottom" template="Codem_Catalog::category/bottom-cms.phtml"/>
        </referenceContainer>
     </body> 
 </page>
