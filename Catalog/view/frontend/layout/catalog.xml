@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+    <catalog_category_default>
+    <reference name="content">
+        <block class="Codem\Catalog\Block\Category\View" name="category_banner" as="category_banner" template="Codem_Catalog::category/category-banner.phtml" />
+    </reference>
+    </catalog_category_default>
+</body>
+</page>

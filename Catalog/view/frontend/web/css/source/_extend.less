@@ -1,0 +1,59 @@
+.page-title-wrapper .page-title {
+    color: #878787
+}
+.action.primary.tocart {
+    background: #ff9f00;
+    border-color: #ff9f00;
+    color : #fff;
+} 
+
+// Common
+// (for styles used in both mobile and desktop views)
+& when (@media-common = true) {
+
+    .hideContent {
+        overflow: hidden;
+        line-height: 1.5em;
+        max-height: 3em;
+    }
+    
+    .showContent {
+        line-height: 1.5em;
+        max-height: auto;
+    }
+
+    .read-more a {
+        margin-top: 20px;
+        display: none;
+    }
+}
+    
+// Mobile
+// (for all mobile styles.)
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    
+    ///end mobile
+}
+    
+// Tablet
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    
+    ///////end tablet
+}
+    
+// Desktop
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+    
+    .category-view {
+        display: flex;
+        align-items: center;
+        .category-image {
+            padding-right: 30px;
+            flex: 50%;
+        }
+        .category-description {
+            flex: 50%;
+        }
+    }
+
+}

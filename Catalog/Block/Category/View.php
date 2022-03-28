@@ -18,6 +18,9 @@ class View extends \Magento\Catalog\Block\Category\View
     /**
      * @return mixed
      */
+
+    //Function for getting cms static block html by using blockId
+
     public function getCmsBlockBottomHtml()
     {
         
