@@ -1,8 +1,0 @@
-interface ProductInterface {
-    attribute_set_id: Int
-        @doc(description: "ID of the attribute set assigned to the product")
-    attribute_set_name: String
-        @doc(description: "Name of attribute set assigned to the product")
-        @resolver(class: "\\Codem\\Catalog\\Model\\Resolver\\Productsgraphql")
-}
-
