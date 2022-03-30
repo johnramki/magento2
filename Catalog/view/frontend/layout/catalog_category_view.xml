@@ -4,12 +4,9 @@
     <script src="Codem_Catalog::js/custom.js" />
     </head>
     <body>
-        <referenceContainer name="content">
-             <block class="Codem\Catalog\Block\Category\View" name="category.cms.bottom"  template="Codem_Catalog::category/category-banner.phtml"/>
-       </referenceContainer>
-       <move element="category.cms.bottom" destination="footer" before="-"/>
-    <!--     <referenceContainer name="content.bottom">
+        
+    <referenceContainer name="content.bottom">
              <block class="Codem\Catalog\Block\Category\View" name="category.cms.bottom" template="Codem_Catalog::category/bottom-cms.phtml"/>
-       </referenceContainer> -->
+       </referenceContainer>
     </body> 
 </page>

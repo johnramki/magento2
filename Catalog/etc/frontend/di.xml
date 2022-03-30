@@ -4,7 +4,4 @@
         <plugin name="customise_product_rate"
                 type="Codem\Catalog\Plugins\Product"/>
     </type>
-    <type name="Magento\Catalog\Controller\Product\View">
-        <plugin name="disabled_products_redirect" type="Codem\Catalog\Plugins\ProductsRedirect"/>
-    </type>
 </config>
