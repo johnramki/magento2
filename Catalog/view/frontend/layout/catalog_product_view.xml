@@ -13,8 +13,6 @@
         <referenceContainer name="content">
             <block class="Magento\Catalog\Block\Product\View" name="product.info.newattribute" template="Codem_Catalog::newattribute.phtml" />
         </referenceContainer>
-        <referenceContainer name="product.info.main">
-            <block class="Magento\Catalog\Block\Product\View" name="product.info.newattribute1" template="Codem_Catalog::newattribute1.phtml" after="product.info.price" />
-        </referenceContainer>
+   
     </body>
 </page>
